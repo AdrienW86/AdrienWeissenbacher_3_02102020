@@ -1,0 +1,290 @@
+/* First button */
+
+@mixin btn {
+    @media #{$phone} {
+           
+    width:70%;
+    height:40px;
+    margin:15%;
+    border-radius: 40px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;  
+    padding: 10px 0px 10px 0px;
+    background: linear-gradient($second, $primary);
+        &:hover {
+            background: linear-gradient($second-light, $primary-light);
+        }
+    }
+}
+
+@mixin btn_medium {
+    @media #{$medium} {
+
+    width:70%;
+    height:80px;
+    margin:15%;
+    border-radius: 80px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px 60px 10px 50px;
+    text-align: center;
+    background: linear-gradient($second, $primary);
+        &:hover {
+            background: linear-gradient($second-light, $primary-light);
+        }
+    }
+}
+
+@mixin btn_large {
+    @media #{$large} {
+
+    width:70%;
+    height:180px;
+    margin:auto;
+    border-radius: 80px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px 60px 10px 50px;
+    text-align: center;
+    background: linear-gradient($second, $primary);
+        &:hover {
+            background: linear-gradient($second-light, $primary-light);
+        }
+    }
+}
+
+/* Second button */
+
+@mixin btn2 {
+    @media #{$phone} {
+
+    display:flex;
+    width:70%;
+    height: 35px;
+    margin: 10px 15% 30px 15%;
+    text-align: center;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(243, 240, 240);
+    box-shadow:  5px 5px 18px #888888;
+    .puce {
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        position: relative;
+        right: 10px;
+        top: 7px;
+        color: white;
+        text-align: center;
+        background-color: $primary;
+    }
+            .icon {
+                position: relative;
+                top: 10px;
+            }
+                .choix {
+                    position: relative;
+                    text-align: center;
+                    bottom: 6px;
+                    left: 5%;
+                }
+                        &:hover {
+                            background-color: lighten($primary, 32);
+                        }
+    }
+}
+
+@mixin btn2_medium {
+    @media #{$medium} {
+
+    display:flex;
+    width:320px;
+    height: 55px;
+    margin: 10px 5px 30px 5px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+    box-shadow:  5px 5px 18px #888888;
+    .puce {
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        position: relative;
+        right: 10px;
+        top: 7px;
+        color: white;
+        text-align: center;
+        background-color: $primary;
+    }
+            .icon {
+                position: relative;
+                top: 10px;
+            }
+                .choix {
+                    position: relative;
+                    left: 10px;
+                    bottom: 6px;
+                }
+                        &:hover {
+                            background-color: lighten($primary, 32);
+                        }   
+    }
+}
+
+@mixin btn2_large {
+    @media #{$large} {
+
+    display:flex;
+    width:370px;
+    height: 85px;
+    margin: 10px 5px 30px 5px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    background-color: rgb(243, 240, 240);
+    box-shadow:  5px 5px 18px #888888;
+
+    .puce {
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        position: relative;
+        right: 10px;
+        top: 7px;
+        color: white;
+        text-align: center;
+        background-color: $primary;
+    }
+            .icon {
+                position: relative;
+                top: 10px;
+            }
+                .choix {
+                    position: relative;
+                    left: 10px;
+                    bottom: 6px;
+                }
+                        &:hover {
+                            background-color: lighten($primary, 32);
+                        }   
+    }
+}
+
+/* Button image */
+
+@mixin btn_image {
+    @media #{$phone} {
+
+    width: 75%;
+    margin:15%;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+    }
+}
+        
+@mixin btn_image_medium {
+    @media #{$medium} {
+
+    width: 450px;
+    height: 220px;
+    border-radius: 50px 50px 0 0;
+    }
+}
+
+@mixin btn_image_large {
+    @media #{$large} {
+
+    width: 650px;
+    height: 320px;
+    border-radius: 70px 70px 0 0;
+    }
+}
+
+@mixin btn_like {
+    @media #{$phone} {
+        
+            width: 75%;
+            height: 35%;
+            margin: 0 15% 0 15%;
+            border-radius: 0px 0px 15px 15px;
+            background-color: darkgrey;
+            position: relative;
+            bottom: 85px;
+            display: flex;
+            font-size: 0.8em;
+    
+            &__name {
+                position: relative;
+                left: 20px;
+                margin-bottom: 5px;
+                
+            }
+                .coeur {
+                    position: relative;
+                    left: 100px;
+                    top: 15px;
+                        &:hover {
+                            color: red
+                        }
+                }      
+    }     
+}  
+  
+@mixin btn_like_medium {
+    @media #{$medium} {
+        
+            width: 450px;
+            height: 60px;
+            border-radius: 0px 0px 15px 15px;
+            background-color: darkgrey;
+            position: relative;
+            bottom: 20px;
+            display: flex;
+            font-size: 0.8em;
+    
+            &__name {
+                position: relative;
+                left: 20px;
+                margin-bottom: 5px;
+            }
+                .coeur {
+                    position: relative;
+                    left: 120px;
+                    top: 15px;
+                        &:hover {
+                            color: red
+                        }
+                }      
+    }     
+}  
+
+@mixin btn_like_large {
+    @media #{$large} {
+        
+            width: 650px;
+            height: 60px;
+            border-radius: 0px 0px 15px 15px;
+            background-color: darkgrey;
+            position: relative;
+            bottom: 20px;
+            display: flex;
+            font-size: 0.8em;
+    
+            &__name {
+                position: relative;
+                left: 20px;
+                margin-bottom: 5px;
+            }
+                .coeur {
+                    position: relative;
+                    left: 120px;
+                    top: 15px;
+                        &:hover {
+                            color: red
+                        }
+                }      
+    }     
+}  

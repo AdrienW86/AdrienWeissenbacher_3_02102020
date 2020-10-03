@@ -1,0 +1,68 @@
+.btn {  
+    @include btn;
+    @include btn_medium;  
+    @include btn_large;
+}
+
+.btn2 {
+    @include btn2;
+    @include btn2_medium;
+    @include btn2_large;
+}
+
+.img__bouton {
+    @include btn_image;
+    @include btn_image_medium;
+    @include btn_image_large;
+   
+}
+
+.like { 
+    @include btn_like;
+    @include btn_like_medium;
+    @include btn_like_large;
+}
+
+
+    
+
+
+   
+
+
+.locate {
+    width:200px;
+    height:40px;
+    border: none;
+    color: black;
+}
+
+
+.checkbox {
+    border-radius:0 10px 10px 0;
+    width: 70px;
+    height: 80px;
+    color: $third;
+    background-color: $third;
+    
+        &__img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: relative;
+            left: 20px;
+            top: 25px;
+
+            &:hover {
+                transform: rotate(360deg);
+                transition-delay: 0.3s;
+                transition-duration: 1s;
+            }
+        }
+}
+
+
+.reserve {
+    width :90%;
+    margin:auto;
+}

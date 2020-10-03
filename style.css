@@ -1,0 +1,336 @@
+/* First button */
+/* Second button */
+/* Button image */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+h4 span {
+  border-bottom: 2px solid #99E2D0;
+}
+
+@media only screen and (max-width:780px) {
+  .btn {
+    width: 70%;
+    height: 40px;
+    margin: 15%;
+    border-radius: 40px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  .btn:hover {
+    background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .btn {
+    width: 70%;
+    height: 80px;
+    margin: 15%;
+    border-radius: 80px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px 60px 10px 50px;
+    text-align: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  .btn:hover {
+    background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn {
+    width: 70%;
+    height: 180px;
+    margin: auto;
+    border-radius: 80px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px 60px 10px 50px;
+    text-align: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  .btn:hover {
+    background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .btn2 {
+    display: flex;
+    width: 70%;
+    height: 35px;
+    margin: 10px 15% 30px 15%;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 15px;
+    background-color: #f3f0f0;
+    box-shadow: 5px 5px 18px #888888;
+  }
+  .btn2 .puce {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: relative;
+    right: 10px;
+    top: 7px;
+    color: white;
+    text-align: center;
+    background-color: #9356DC;
+  }
+  .btn2 .icon {
+    position: relative;
+    top: 10px;
+  }
+  .btn2 .choix {
+    position: relative;
+    text-align: center;
+    bottom: 6px;
+    left: 5%;
+  }
+  .btn2:hover {
+    background-color: #e9ddf8;
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .btn2 {
+    display: flex;
+    width: 320px;
+    height: 55px;
+    margin: 10px 5px 30px 5px;
+    border: 0px solid white;
+    border-radius: 25px;
+    background-color: #f3f0f0;
+    box-shadow: 5px 5px 18px #888888;
+  }
+  .btn2 .puce {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: relative;
+    right: 10px;
+    top: 7px;
+    color: white;
+    text-align: center;
+    background-color: #9356DC;
+  }
+  .btn2 .icon {
+    position: relative;
+    top: 10px;
+  }
+  .btn2 .choix {
+    position: relative;
+    left: 10px;
+    bottom: 6px;
+  }
+  .btn2:hover {
+    background-color: #e9ddf8;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn2 {
+    display: flex;
+    width: 370px;
+    height: 85px;
+    margin: 10px 5px 30px 5px;
+    border: 0px solid white;
+    border-radius: 35px;
+    background-color: #f3f0f0;
+    box-shadow: 5px 5px 18px #888888;
+  }
+  .btn2 .puce {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: relative;
+    right: 10px;
+    top: 7px;
+    color: white;
+    text-align: center;
+    background-color: #9356DC;
+  }
+  .btn2 .icon {
+    position: relative;
+    top: 10px;
+  }
+  .btn2 .choix {
+    position: relative;
+    left: 10px;
+    bottom: 6px;
+  }
+  .btn2:hover {
+    background-color: #e9ddf8;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .img__bouton {
+    width: 75%;
+    margin: 15%;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .img__bouton {
+    width: 450px;
+    height: 220px;
+    border-radius: 50px 50px 0 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .img__bouton {
+    width: 650px;
+    height: 320px;
+    border-radius: 70px 70px 0 0;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .like {
+    width: 75%;
+    height: 35%;
+    margin: 0 15% 0 15%;
+    border-radius: 0px 0px 15px 15px;
+    background-color: darkgrey;
+    position: relative;
+    bottom: 85px;
+    display: flex;
+    font-size: 0.8em;
+  }
+  .like__name {
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+  }
+  .like .coeur {
+    position: relative;
+    left: 100px;
+    top: 15px;
+  }
+  .like .coeur:hover {
+    color: red;
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .like {
+    width: 450px;
+    height: 60px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: darkgrey;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    font-size: 0.8em;
+  }
+  .like__name {
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+  }
+  .like .coeur {
+    position: relative;
+    left: 120px;
+    top: 15px;
+  }
+  .like .coeur:hover {
+    color: red;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .like {
+    width: 650px;
+    height: 60px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: darkgrey;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    font-size: 0.8em;
+  }
+  .like__name {
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+  }
+  .like .coeur {
+    position: relative;
+    left: 120px;
+    top: 15px;
+  }
+  .like .coeur:hover {
+    color: red;
+  }
+}
+
+.locate {
+  width: 200px;
+  height: 40px;
+  border: none;
+  color: black;
+}
+
+.checkbox {
+  border-radius: 0 10px 10px 0;
+  width: 70px;
+  height: 80px;
+  color: #99E2D0;
+  background-color: #99E2D0;
+}
+.checkbox__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  left: 20px;
+  top: 25px;
+}
+.checkbox__img:hover {
+  transform: rotate(360deg);
+  transition-delay: 0.3s;
+  transition-duration: 1s;
+}
+
+.reserve {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  font-size: 1em;
+  font-weight: bold;
+  height: 10%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
