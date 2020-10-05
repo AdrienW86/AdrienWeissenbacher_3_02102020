@@ -23,13 +23,13 @@
     @media #{$medium} {
 
     width:70%;
-    height:80px;
+    height:60px;
     margin:15%;
     border-radius: 80px;
     color: white;
     font-size: 2em;
     font-weight: bold;
-    padding: 20px 60px 10px 50px;
+    padding: 10px 60px 10px 50px;
     text-align: center;
     background: linear-gradient($second, $primary);
         &:hover {
@@ -41,8 +41,8 @@
 @mixin btn_large {
     @media #{$large} {
 
-    width:70%;
-    height:180px;
+    width:50%;
+    height:100px;
     margin:auto;
     border-radius: 80px;
     color: white;
@@ -94,6 +94,7 @@
                 }
                         &:hover {
                             background-color: lighten($primary, 32);
+                            color: $primary;
                         }
     }
 }
@@ -102,16 +103,18 @@
     @media #{$medium} {
 
     display:flex;
-    width:320px;
+    width: 70%;
     height: 55px;
-    margin: 10px 5px 30px 5px;
+    margin: 10px 15% 30px 15%;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 25px;
     background-color: rgb(243, 240, 240);
     box-shadow:  5px 5px 18px #888888;
+    font-size: 1.5em;
+    font-weight: bold;
     .puce {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
         border-radius: 100%;
         position: relative;
         right: 10px;
@@ -122,15 +125,19 @@
     }
             .icon {
                 position: relative;
-                top: 10px;
+                top: 15px;
+                left: 30px;
             }
                 .choix {
                     position: relative;
-                    left: 10px;
-                    bottom: 6px;
+                    width: 75%;
+                    padding-left: 25%;
+                    padding-right: 0;
+                    bottom: 8px;
                 }
                         &:hover {
                             background-color: lighten($primary, 32);
+                            color: $primary;
                         }   
     }
 }
@@ -139,36 +146,39 @@
     @media #{$large} {
 
     display:flex;
-    width:370px;
+    width: 50%;
+    margin: 20px 25% 20px 25%;
     height: 85px;
-    margin: 10px 5px 30px 5px;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 35px;
     background-color: rgb(243, 240, 240);
     box-shadow:  5px 5px 18px #888888;
+    font-size: 2em;
+    font-weight: bold;
 
     .puce {
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
         border-radius: 100%;
         position: relative;
         right: 10px;
-        top: 7px;
+        top: 17px;
         color: white;
         text-align: center;
         background-color: $primary;
     }
             .icon {
                 position: relative;
-                top: 10px;
+                top: 25px;
             }
                 .choix {
                     position: relative;
-                    left: 10px;
+                    left: 20%;
                     bottom: 6px;
                 }
                         &:hover {
                             background-color: lighten($primary, 32);
+                            color: $primary;                           
                         }   
     }
 }
@@ -178,68 +188,71 @@
 @mixin btn_image {
     @media #{$phone} {
 
-    width: 75%;
-    margin:15%;
-    height: 140px;
-    border-radius: 15px 15px 0 0;
+        width: 90%;
+        margin: 0 5% 0 5%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;       
     }
 }
         
 @mixin btn_image_medium {
     @media #{$medium} {
-
-    width: 450px;
-    height: 220px;
-    border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    width: 80%;
+    height: 170px;
+    border-radius: 15px 15px 0 0;
     }
 }
 
 @mixin btn_image_large {
     @media #{$large} {
 
-    width: 650px;
-    height: 320px;
-    border-radius: 70px 70px 0 0;
+    width: 90%;
+    height: 170px;
+    border-radius: 25px 25px 0 0;
     }
 }
 
 @mixin btn_like {
     @media #{$phone} {
-        
-            width: 75%;
-            height: 35%;
-            margin: 0 15% 0 15%;
+        cursor: pointer;
+            width: 90%;
+            height: 65px;
+            margin: 0 5% 0 5%;
             border-radius: 0px 0px 15px 15px;
-            background-color: darkgrey;
+            background-color: rgb(255, 255, 255);
             position: relative;
-            bottom: 85px;
+            bottom: 15px;
             display: flex;
             font-size: 0.8em;
     
             &__name {
                 position: relative;
                 left: 20px;
-                margin-bottom: 5px;
-                
+                width: 50%;
+                margin-bottom: 5px;                
             }
                 .coeur {
                     position: relative;
-                    left: 100px;
+                    left: 40%;
                     top: 15px;
                         &:hover {
-                            color: red
-                        }
+                            color: red;                            
+                        }                        
                 }      
     }     
 }  
   
 @mixin btn_like_medium {
     @media #{$medium} {
-        
-            width: 450px;
+        cursor: pointer;
+            width: 80%;
             height: 60px;
+            margin: 0%;
             border-radius: 0px 0px 15px 15px;
-            background-color: darkgrey;
+            background-color: rgb(255, 255, 255);
             position: relative;
             bottom: 20px;
             display: flex;
@@ -248,14 +261,15 @@
             &__name {
                 position: relative;
                 left: 20px;
+                width: 50%;
                 margin-bottom: 5px;
             }
                 .coeur {
                     position: relative;
-                    left: 120px;
+                    left: 75px;
                     top: 15px;
                         &:hover {
-                            color: red
+                            color: red;                           
                         }
                 }      
     }     
@@ -263,11 +277,11 @@
 
 @mixin btn_like_large {
     @media #{$large} {
-        
-            width: 650px;
+        cursor: pointer;
+            width: 90%;
             height: 60px;
-            border-radius: 0px 0px 15px 15px;
-            background-color: darkgrey;
+            border-radius: 0px 0px 25px 25px;
+            background-color: rgb(255, 255, 255);
             position: relative;
             bottom: 20px;
             display: flex;
@@ -276,15 +290,131 @@
             &__name {
                 position: relative;
                 left: 20px;
+                width: 50%;
                 margin-bottom: 5px;
+                font-size: 1em;               
             }
                 .coeur {
                     position: relative;
-                    left: 120px;
+                    left: 80px;
                     top: 15px;
                         &:hover {
-                            color: red
+                            color: red;                           
                         }
                 }      
     }     
 }  
+
+@mixin btn_nouveau {
+    @media #{$phone} {
+        position: relative;
+        z-index: +2;
+        top: 45px;
+        left: 70%;
+        width: 20%;
+        height: 30px;
+        background-color: rgb(160, 207, 160);
+        font-size: 0.8em;
+        font-size: bold;
+        color: rgb(12, 138, 12);
+        text-align: center;
+        padding-top: 7px;
+    }
+}
+
+@mixin btn_nouveau_medium {
+    @media #{$medium} {
+            position: relative;
+            z-index: +2;
+            top: 45px;
+            left: 55%;
+            width: 20%;
+            height: 30px;
+            background-color: rgb(160, 207, 160);
+            font-size: 0.8em;
+            font-size: bold;
+            color: rgb(12, 138, 12);
+            text-align: center;
+            padding-top: 7px;       
+    }
+}
+
+@mixin btn_nouveau_large {
+    @media #{$large} {
+        position: relative;
+        z-index: +2;
+        top: 45px;
+        left: 55%;
+        width: 25%;
+        height: 30px;
+        background-color: rgb(160, 207, 160);
+        font-size: 1em;
+        font-size: bold;
+        color: rgb(12, 138, 12);
+        text-align: center;
+        padding-top: 5px; 
+    }
+}
+
+@mixin carte_medium {
+    @media #{$medium} {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@mixin carte_large {
+    @media #{$large} {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+@mixin btn_home {
+    @media #{$phone} {
+        position: relative;
+        left : 10%;
+        top: 25px;  
+        font-size: bold;
+             &__img {
+                color: black;
+                font-weight: bold;
+                font-size: 2em;
+            }
+    }
+}
+
+@mixin btn_home_medium {
+    @media #{$medium} {
+        position: relative;
+        left : 10%;
+        top: 25px;  
+        font-size: bold;
+             &__img {
+                color: black;
+                font-weight: bold;
+                font-size: 2em;
+            }
+    }
+}
+
+@mixin btn_home_large {
+    @media #{$large} {
+        position: relative;
+        left : 10%;
+        top: 25px;  
+        font-size: bold;
+             &__img {
+                color: black;
+                font-weight: bold;
+                font-size: 2em;
+            }
+    }
+}

@@ -1,7 +1,10 @@
+/*Les différents boutons avec Médias queries intégrées*/
+
 .btn {  
     @include btn;
     @include btn_medium;  
     @include btn_large;
+    
 }
 
 .btn2 {
@@ -23,19 +26,20 @@
     @include btn_like_large;
 }
 
-
+.nouveau {
+    @include btn_nouveau;
+    @include btn_nouveau_medium;
+    @include btn_nouveau_large;
+}
     
 
+.btn_home {
+    @include btn_home;  
+    @include btn_home_medium;
+    @include btn_home_large;     
+} 
 
-   
 
-
-.locate {
-    width:200px;
-    height:40px;
-    border: none;
-    color: black;
-}
 
 
 .checkbox {
@@ -66,3 +70,47 @@
     width :90%;
     margin:auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+.bloc {
+    background-color: rgb(243, 240, 240);
+    padding: 20px;
+    margin: 0 0 0 0;
+    justify-content: center;
+    text-align: justify;
+}
+
+input {
+    
+    border: none;
+    height: 100%;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgb(226, 226, 226);
+     &:active {
+         border: none;
+         text-decoration: none;
+     }
+       
+}
+
+.locate {
+    display:flex;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+        &__logo {
+            width: 30%;
+            padding-left: 24%; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+}
+
+

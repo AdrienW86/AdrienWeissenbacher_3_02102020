@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* First button */
 /* Second button */
 /* Button image */
@@ -11,9 +12,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
-  text-align: left;
+  margin-left: 15px;
 }
 
 h3 {
@@ -26,6 +27,7 @@ h4 span {
   border-bottom: 2px solid #99E2D0;
 }
 
+/*Les différents boutons avec Médias queries intégrées*/
 @media only screen and (max-width:780px) {
   .btn {
     width: 70%;
@@ -46,13 +48,13 @@ h4 span {
 @media only screen and (min-width:780px) and (max-width: 1200px) {
   .btn {
     width: 70%;
-    height: 80px;
+    height: 60px;
     margin: 15%;
     border-radius: 80px;
     color: white;
     font-size: 2em;
     font-weight: bold;
-    padding: 20px 60px 10px 50px;
+    padding: 10px 60px 10px 50px;
     text-align: center;
     background: linear-gradient(#FF79DA, #9356DC);
   }
@@ -62,8 +64,8 @@ h4 span {
 }
 @media only screen and (min-width: 1200px) {
   .btn {
-    width: 70%;
-    height: 180px;
+    width: 50%;
+    height: 100px;
     margin: auto;
     border-radius: 80px;
     color: white;
@@ -113,22 +115,25 @@ h4 span {
   }
   .btn2:hover {
     background-color: #e9ddf8;
+    color: #9356DC;
   }
 }
 @media only screen and (min-width:780px) and (max-width: 1200px) {
   .btn2 {
     display: flex;
-    width: 320px;
+    width: 70%;
     height: 55px;
-    margin: 10px 5px 30px 5px;
+    margin: 10px 15% 30px 15%;
     border: 0px solid white;
     border-radius: 25px;
     background-color: #f3f0f0;
     box-shadow: 5px 5px 18px #888888;
+    font-size: 1.5em;
+    font-weight: bold;
   }
   .btn2 .puce {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     position: relative;
     right: 10px;
@@ -139,96 +144,108 @@ h4 span {
   }
   .btn2 .icon {
     position: relative;
-    top: 10px;
+    top: 15px;
+    left: 30px;
   }
   .btn2 .choix {
     position: relative;
-    left: 10px;
-    bottom: 6px;
+    width: 75%;
+    padding-left: 25%;
+    padding-right: 0;
+    bottom: 8px;
   }
   .btn2:hover {
     background-color: #e9ddf8;
+    color: #9356DC;
   }
 }
 @media only screen and (min-width: 1200px) {
   .btn2 {
     display: flex;
-    width: 370px;
+    width: 50%;
+    margin: 20px 25% 20px 25%;
     height: 85px;
-    margin: 10px 5px 30px 5px;
     border: 0px solid white;
     border-radius: 35px;
     background-color: #f3f0f0;
     box-shadow: 5px 5px 18px #888888;
+    font-size: 2em;
+    font-weight: bold;
   }
   .btn2 .puce {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     position: relative;
     right: 10px;
-    top: 7px;
+    top: 17px;
     color: white;
     text-align: center;
     background-color: #9356DC;
   }
   .btn2 .icon {
     position: relative;
-    top: 10px;
+    top: 25px;
   }
   .btn2 .choix {
     position: relative;
-    left: 10px;
+    left: 20%;
     bottom: 6px;
   }
   .btn2:hover {
     background-color: #e9ddf8;
+    color: #9356DC;
   }
 }
 
 @media only screen and (max-width:780px) {
   .img__bouton {
-    width: 75%;
-    margin: 15%;
-    height: 140px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    height: 200px;
     border-radius: 15px 15px 0 0;
   }
 }
 @media only screen and (min-width:780px) and (max-width: 1200px) {
   .img__bouton {
-    width: 450px;
-    height: 220px;
-    border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    width: 80%;
+    height: 170px;
+    border-radius: 15px 15px 0 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   .img__bouton {
-    width: 650px;
-    height: 320px;
-    border-radius: 70px 70px 0 0;
+    width: 90%;
+    height: 170px;
+    border-radius: 25px 25px 0 0;
   }
 }
 
 @media only screen and (max-width:780px) {
   .like {
-    width: 75%;
-    height: 35%;
-    margin: 0 15% 0 15%;
+    cursor: pointer;
+    width: 90%;
+    height: 65px;
+    margin: 0 5% 0 5%;
     border-radius: 0px 0px 15px 15px;
-    background-color: darkgrey;
+    background-color: white;
     position: relative;
-    bottom: 85px;
+    bottom: 15px;
     display: flex;
     font-size: 0.8em;
   }
   .like__name {
     position: relative;
     left: 20px;
+    width: 50%;
     margin-bottom: 5px;
   }
   .like .coeur {
     position: relative;
-    left: 100px;
+    left: 40%;
     top: 15px;
   }
   .like .coeur:hover {
@@ -237,10 +254,12 @@ h4 span {
 }
 @media only screen and (min-width:780px) and (max-width: 1200px) {
   .like {
-    width: 450px;
+    cursor: pointer;
+    width: 80%;
     height: 60px;
+    margin: 0%;
     border-radius: 0px 0px 15px 15px;
-    background-color: darkgrey;
+    background-color: white;
     position: relative;
     bottom: 20px;
     display: flex;
@@ -249,11 +268,12 @@ h4 span {
   .like__name {
     position: relative;
     left: 20px;
+    width: 50%;
     margin-bottom: 5px;
   }
   .like .coeur {
     position: relative;
-    left: 120px;
+    left: 75px;
     top: 15px;
   }
   .like .coeur:hover {
@@ -262,10 +282,11 @@ h4 span {
 }
 @media only screen and (min-width: 1200px) {
   .like {
-    width: 650px;
+    cursor: pointer;
+    width: 90%;
     height: 60px;
-    border-radius: 0px 0px 15px 15px;
-    background-color: darkgrey;
+    border-radius: 0px 0px 25px 25px;
+    background-color: white;
     position: relative;
     bottom: 20px;
     display: flex;
@@ -274,11 +295,13 @@ h4 span {
   .like__name {
     position: relative;
     left: 20px;
+    width: 50%;
     margin-bottom: 5px;
+    font-size: 1em;
   }
   .like .coeur {
     position: relative;
-    left: 120px;
+    left: 80px;
     top: 15px;
   }
   .like .coeur:hover {
@@ -286,11 +309,93 @@ h4 span {
   }
 }
 
-.locate {
-  width: 200px;
-  height: 40px;
-  border: none;
-  color: black;
+@media only screen and (max-width:780px) {
+  .nouveau {
+    position: relative;
+    z-index: 2;
+    top: 45px;
+    left: 70%;
+    width: 20%;
+    height: 30px;
+    background-color: #a0cfa0;
+    font-size: 0.8em;
+    font-size: bold;
+    color: #0c8a0c;
+    text-align: center;
+    padding-top: 7px;
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .nouveau {
+    position: relative;
+    z-index: 2;
+    top: 45px;
+    left: 55%;
+    width: 20%;
+    height: 30px;
+    background-color: #a0cfa0;
+    font-size: 0.8em;
+    font-size: bold;
+    color: #0c8a0c;
+    text-align: center;
+    padding-top: 7px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nouveau {
+    position: relative;
+    z-index: 2;
+    top: 45px;
+    left: 55%;
+    width: 25%;
+    height: 30px;
+    background-color: #a0cfa0;
+    font-size: 1em;
+    font-size: bold;
+    color: #0c8a0c;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .btn_home {
+    position: relative;
+    left: 10%;
+    top: 25px;
+    font-size: bold;
+  }
+  .btn_home__img {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .btn_home {
+    position: relative;
+    left: 10%;
+    top: 25px;
+    font-size: bold;
+  }
+  .btn_home__img {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn_home {
+    position: relative;
+    left: 10%;
+    top: 25px;
+    font-size: bold;
+  }
+  .btn_home__img {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
 }
 
 .checkbox {
@@ -319,18 +424,103 @@ h4 span {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+.bloc {
+  background-color: #f3f0f0;
+  padding: 20px;
+  margin: 0 0 0 0;
+  justify-content: center;
+  text-align: justify;
+}
+
+input {
+  border: none;
+  height: 100%;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #e2e2e2;
+}
+input:active {
+  border: none;
+  text-decoration: none;
+}
+
+.locate {
+  display: flex;
+  width: 100%;
+  background-color: #e2e2e2;
+}
+.locate__logo {
+  width: 30%;
+  padding-left: 24%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 header {
   height: 10%;
   width: 100%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  width: 75%;
+  margin: 0px;
+}
+.title img {
+  width: 75%;
+  margin: 20px 25% 20px 25%;
+}
+
+.bloc_page {
+  background-color: #f3f0f0;
+  padding: 20px 0 20px 0;
+  margin: 0px;
+}
+
+@media only screen and (min-width:780px) and (max-width: 1200px) {
+  .carte {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .carte {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.en_tête {
+  display: flex;
+}
+
 footer {
   color: white;
   background-color: black;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold;
   height: 10%;
   width: 100%;
+  margin: 0px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
