@@ -10,7 +10,7 @@ h1 {
 h2 {
     font-size: 2em;
     font-weight: bold;
-    margin-left: 15px;
+    margin: 8%;
 }
 
 h3 {
@@ -19,7 +19,14 @@ h3 {
     color: black;
 }
 
+h4{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5%;
+}
+
 h4 span {
-    border-bottom: 2px solid $third ;
+    border-bottom: 3px solid $third;
+    padding-bottom: 6px;
     
 }
