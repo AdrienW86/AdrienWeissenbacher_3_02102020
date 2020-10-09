@@ -59,16 +59,14 @@
 
 .bloc1 {
     z-index: 5;
-    position: relative;
-   
+    position: relative;   
     bottom: 15px;
     border-radius: 20px 20px 0 0; 
     background-color:  rgb(243, 240, 240);
 }
 
 .entrée,.plat,.dessert {
-    padding-left: 10px;
-    
+    padding-left: 10px;    
 }
 
 .prix {
@@ -79,11 +77,8 @@
     font-size: bold;
 }
 
-.entrée__name {
+.entrée__name,.plat__name,.dessert__name {
     white-space: nowrap;
-    text-overflow: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
-    
-    
-
 }

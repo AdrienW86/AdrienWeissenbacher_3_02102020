@@ -175,7 +175,22 @@ input {
 }
 
 
-.entrée1 {
-    animation-name:entrées_déroulantes;
-    animation-duration:2s
+.a {
+
+   animation-name:entrées_déroulantes;
+    animation-duration:0.5s
+}
+
+.b {
+    animation-name :entrées_déroulantes;
+    animation-duration: 1s;
+}
+
+.c {
+    animation-name :entrées_déroulantes;
+    animation-duration: 1.5s;
+}
+.d {
+    animation-name :entrées_déroulantes;
+    animation-duration: 2s;
 }

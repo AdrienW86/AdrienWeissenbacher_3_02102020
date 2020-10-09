@@ -6,6 +6,38 @@
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0.25;
+    transform: translateY(6px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(4px);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1px);
+  }
+}
+@keyframes plats_déroulants {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes desserts_déroulantes {
+  0% {
+    opacity: 0;
+  }
   70% {
     opacity: 0;
   }
@@ -533,7 +565,22 @@ input:active {
   transition-timing-function: ease-in-out;
 }
 
-.entrée1 {
+.a {
+  animation-name: entrées_déroulantes;
+  animation-duration: 0.5s;
+}
+
+.b {
+  animation-name: entrées_déroulantes;
+  animation-duration: 1s;
+}
+
+.c {
+  animation-name: entrées_déroulantes;
+  animation-duration: 1.5s;
+}
+
+.d {
   animation-name: entrées_déroulantes;
   animation-duration: 2s;
 }
@@ -635,9 +682,9 @@ header {
   font-size: bold;
 }
 
-.entrée__name {
+.entrée__name, .plat__name, .dessert__name {
   white-space: nowrap;
-  text-overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
