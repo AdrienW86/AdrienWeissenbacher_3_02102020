@@ -194,3 +194,20 @@ input {
     animation-name :entrées_déroulantes;
     animation-duration: 2s;
 }
+
+.coeur_svg {
+    height: 40px;
+    width: 40px;
+    fill: transparent;
+    stroke :black;
+        &:hover {
+            animation-name: degrade_coeur;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        
+            
+        }
+    
+
+

@@ -55,3 +55,25 @@
         opacity:1;
     }
 }
+
+@keyframes degrade_coeur {
+    0% {
+        fill: lighten(#9356DC,10);;
+    }
+
+    25% {
+        fill: lighten(#AE5FDC,10)
+    }
+
+    50% {
+        fill:lighten(#C968DB,10);
+    }
+
+    75% {
+        fill:lighten(#E470DB, 10);
+    }
+
+    100% {
+        fill: lighten(#FF79DA, 10)
+    }
+}

@@ -45,6 +45,23 @@
     opacity: 1;
   }
 }
+@keyframes degrade_coeur {
+  0% {
+    fill: #ae80e5;
+  }
+  25% {
+    fill: #c389e5;
+  }
+  50% {
+    fill: #d891e5;
+  }
+  75% {
+    fill: #ec9be6;
+  }
+  100% {
+    fill: #fface8;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -583,6 +600,18 @@ input:active {
 .d {
   animation-name: entrées_déroulantes;
   animation-duration: 2s;
+}
+
+.coeur_svg {
+  height: 40px;
+  width: 40px;
+  fill: transparent;
+  stroke: black;
+}
+.coeur_svg:hover {
+  animation-name: degrade_coeur;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 header {
