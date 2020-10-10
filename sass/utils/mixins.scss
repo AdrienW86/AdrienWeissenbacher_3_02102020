@@ -231,18 +231,33 @@
             &__name {
                 position: relative;
                 left: 20px;
-                width: 50%;
+                width: 80%;
                 margin-bottom: 5px;                
             }
-                .coeur {
-                    position: relative;
-                    left: 40%;
-                    top: 15px;
-                        &:hover {
-                            color: red;                            
-                        }                        
-                }      
-    }     
+            .coeur {
+                height: 30px;
+                width: 30px;
+
+                
+            .coeur_svg {
+                position:relative;
+                top: 15px;
+                height: 30px;
+                width: 30px;
+                fill: transparent;
+                stroke :black;
+
+                &:hover {
+                    animation-name: degrade_coeur;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                }
+                    
+                    
+                        
+                    }           
+                      
+    }     }
 }  
   
 @mixin btn_like_medium {
@@ -261,17 +276,27 @@
             &__name {
                 position: relative;
                 left: 20px;
-                width: 50%;
+                width: 80%;
                 margin-bottom: 5px;
             }
-                .coeur {
-                    position: relative;
-                    left: 75px;
-                    top: 15px;
-                        &:hover {
-                            color: red;                           
-                        }
-                }      
+
+                .coeur {                   
+                    height: 30px;
+                    width: 30px;
+            }
+                     .coeur_svg {
+                        position:relative;
+                        top: 15px;
+                        height: 30px;
+                        width: 30px;
+                        fill: transparent;
+                        stroke :black;
+                             &:hover {
+                                animation-name: degrade_coeur;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
+                            }                  
+                    }      
     }     
 }  
 
@@ -290,18 +315,28 @@
             &__name {
                 position: relative;
                 left: 20px;
-                width: 50%;
+                width: 80%;
                 margin-bottom: 5px;
                 font-size: 1em;               
             }
-                .coeur {
-                    position: relative;
-                    left: 80px;
+            .coeur {
+                height: 30px;
+                width: 30px;
+                
+                .coeur_svg {
+                    position:relative;
                     top: 15px;
+                    height: 30px;
+                    width: 30px;
+                    fill: transparent;
+                    stroke :black;
                         &:hover {
-                            color: red;                           
+                            animation-name: degrade_coeur;
+                            animation-duration: 1s;
+                            animation-fill-mode: forwards;
                         }
-                }      
+                }                                                          
+            }      
     }     
 }  
 

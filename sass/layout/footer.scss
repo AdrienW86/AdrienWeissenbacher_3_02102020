@@ -7,4 +7,13 @@ footer {
     width: 100%;
     margin: 0px;
     padding: 10px;
+        
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $primary;
+        }
+    }      
 }
+
