@@ -145,6 +145,8 @@
 @mixin btn2_large {
     @media #{$large} {
 
+       
+    
     display:flex;
     width: 50%;
     margin: 20px 25% 20px 25%;
@@ -155,8 +157,12 @@
     box-shadow:  5px 5px 18px #888888;
     font-size: 2em;
     font-weight: bold;
+       
+                          
+     
 
     .puce {
+        opacity:1;
         height: 40px;
         width: 40px;
         border-radius: 100%;
@@ -176,10 +182,10 @@
                     left: 20%;
                     bottom: 6px;
                 }
-                        &:hover {
-                            background-color: lighten($primary, 32);
-                            color: $primary;                           
-                        }   
+                &:hover {
+                    background-color: lighten($primary, 32);
+                    color: $primary;  }
+                        
     }
 }
 
@@ -209,6 +215,7 @@
 @mixin btn_image_large {
     @media #{$large} {
 
+    
     width: 90%;
     height: 170px;
     border-radius: 25px 25px 0 0;
@@ -376,8 +383,8 @@
 
 @mixin btn_nouveau_large {
     @media #{$large} {
-        position: relative;
-        z-index: +2;
+        position:relative;
+    
         top: 45px;
         left: 55%;
         width: 25%;
@@ -454,3 +461,146 @@
     }
 }
 
+@mixin loader {
+    @media #{$phone} {
+        position: fixed;
+        z-index: 10;
+        background-color: blue;
+        height: 100%;
+        width :100%;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        
+        animation-name: out;
+        animation-duration:0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+            .circle_box {
+                display: flex;               
+                position: relative;
+                top: 30%;
+                              
+            }
+                .chargement {
+                    display: inline-block;
+                    position:relative;
+                    left: 2%;
+                    padding-top:4%;  
+                }
+                    .circle {   
+                        width :32px;
+                        height: 32px;
+                        border-radius: 32px;
+                        border : 6px solid grey    
+                    }
+                        .circle:after{
+                            content:"";
+                            position: absolute;
+                            height: 32px;
+                            width: 32px;
+                            top: 0; left:0;
+                            border-radius: 32px;
+                            border: 6px solid transparent;
+                            border-top-color: #FFF;
+                            animation: spin 1s linear infinite;
+                        }
+}
+
+
+@mixin loader_medium {
+    @media #{$medium} {
+        position: fixed;
+        z-index: 10;
+        background-color: blue;
+        height: 100%;
+        width :100%;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        animation-name: out;
+        animation-duration:0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+            .circle_box {
+                display: flex;
+                position: relative;
+                top: 20%;
+                left: 15%;
+            }
+                .chargement {
+                    display: inline-block;
+                    position:relative;
+                    left: 2%;   
+                }
+                    .circle {   
+                        width :62px;
+                        height: 62px;
+                        border-radius: 50px;
+                        border : 6px solid grey    
+                    }
+                        .circle:after{
+                            content:"";
+                            position: absolute;
+                            height: 50px;
+                            width: 50px;
+                            top: 0; left:0;
+                            border-radius: 50px;
+                            border: 6px solid transparent;
+                            border-top-color: #FFF;
+                            animation: spin 1s linear infinite;
+                        }
+}
+
+@mixin loader_large {
+    @media #{$large} {
+        position: fixed;
+    z-index: 10;
+    background-color: blue;
+    height: 100%;
+    width :100%;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    animation-name: out;
+    animation-duration:0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.circle_box {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 35%;
+}
+
+.chargement {
+    display: inline-block;
+    position:relative;
+    left: 2%;   
+}
+
+.circle {   
+    width :62px;
+    height: 62px;
+    border-radius: 50px;
+    border : 6px solid grey    
+}
+
+.circle:after{
+    content:"";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0; left:0;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear infinite;
+}
+    }

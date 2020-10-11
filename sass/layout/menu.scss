@@ -1,3 +1,9 @@
+.loader {
+    @include loader;
+    @include loader_medium;
+    @include loader_large;
+  }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -93,3 +99,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.container {
+    overflow:hidden;
+}
+
