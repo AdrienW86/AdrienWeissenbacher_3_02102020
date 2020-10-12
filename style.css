@@ -42,15 +42,15 @@
 }
 @keyframes out {
   0% {
-    display: block;
+    width: 100%;
     opacity: 1;
   }
   99% {
-    display: none;
+    width: 100%;
     opacity: 1;
   }
   100% {
-    display: none;
+    width: 0%;
     opacity: 0;
   }
 }
