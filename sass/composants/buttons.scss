@@ -8,6 +8,7 @@
 }
 
 .btn2 {
+    
     @include btn2;
     @include btn2_medium;
     @include btn2_large;
@@ -16,8 +17,7 @@
 .img__bouton {
     @include btn_image;
     @include btn_image_medium;
-    @include btn_image_large;
-   
+    @include btn_image_large;   
 }
 
 .like { 
@@ -33,62 +33,6 @@
 }
     
 
-.btn_home {
-    @include btn_home;  
-    @include btn_home_medium;
-    @include btn_home_large;     
-} 
-
-
-
-
-
-
-
-.reserve {
-    width :90%;
-    margin:auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-.bloc {
-    background-color: rgb(243, 240, 240);
-    padding: 20px;
-    margin: 0 0 0 0;
-    justify-content: center;
-    text-align: justify;
-}
-
-input {
-    
-    border: none;
-    height: 100%;
-    width: 40%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1em;
-    font-weight: bold;
-    background-color: rgb(226, 226, 226);
-     &:active {
-         border: none;
-         text-decoration: none;
-     }       
-}
-
-.locate {
-    display:flex;
-    width: 100%;
-    background-color: rgb(226, 226, 226);
-        &__logo {
-            width: 30%;
-            padding-left: 24%; 
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-}
 
 .entrée,.plat,.dessert {
     cursor: pointer;
@@ -102,13 +46,15 @@ input {
     background: rgb(255, 255, 255);
         &__name,.plat__name,.dessert__name {
             width: 100%;
-            height: 80px; 
+            height: 80px;
+            margin-right: 10px;
         }   
             &.prix {
                 display:flex;
                 height: 80px;
                 width: 100%; 
                 margin-top: 20px;
+                
                 font-size: 1em;
                 font-weight: bold;
             }
@@ -124,8 +70,7 @@ input {
                 height: 80px;                             
                 color: $third;
                 background-color: $third;                                       
-                    &__img {
-                       
+                    &__img {                      
                         width: 30px;
                         height: 30px;
                         border-radius: 100%; 
@@ -140,10 +85,8 @@ input {
 }
                                     
 .entrée,.plat,.dessert {
-
     &:hover {
-        .checkbox {
-            
+        .checkbox {           
             position: relative;                       
             border-radius:0 10px 10px 0;
             width: 70px;
@@ -154,8 +97,7 @@ input {
             transition-duration: 1; 
             transition-timing-function: ease-in-out; 
                                                                       
-                &__img {
-                                       
+                &__img {                                      
                     width: 30px;
                     height: 30px;
                     border-radius: 100%;
@@ -172,26 +114,6 @@ input {
     }
 }
 
-
-.a {
-
-   animation-name:entrées_déroulantes;
-    animation-duration:0.5s;
-}
-
-.b {
-    animation-name :entrées_déroulantes;
-    animation-duration: 1s;
-}
-
-.c {
-    animation-name :entrées_déroulantes;
-    animation-duration: 1.5s;
-}
-.d {
-    animation-name :entrées_déroulantes;
-    animation-duration: 2s;
-}
 
 
     

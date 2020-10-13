@@ -1,3 +1,5 @@
+/* Keyframes */
+
 @keyframes entrées_déroulantes {
     0% {
         opacity: 0;
@@ -47,11 +49,19 @@
         fill: lighten(#FF79DA, 10)
     }
 }
-   @keyframes out {
+@keyframes out {
     
-    0% {width:100%; opacity:1;}
-    99% {width: 100%; opacity:1;}
-    100% {width:0%; opacity:0;}
+    0% {
+        width: 100%; opacity:1;
+    }
+
+    99% {
+        width: 100%; opacity:1;
+    }
+    
+    100% {
+        width: 0%; opacity:0;
+    }
   }
   
 @keyframes spin {
@@ -64,4 +74,26 @@
     }
 }
 
+/* Animations */
+
+.a {
+    animation-name:entrées_déroulantes;
+    animation-duration:0.5s;
+ }
+ 
+.b {
+    animation-name :entrées_déroulantes;
+    animation-duration: 1s;
+ }
+ 
+.c {
+    animation-name :entrées_déroulantes;
+    animation-duration: 1.5s;
+}
+
+.d {
+    animation-name :entrées_déroulantes;
+    animation-duration: 2s;
+}
+ 
 

@@ -1,8 +1,7 @@
 /* First button */
 
 @mixin btn {
-    @media #{$phone} {
-           
+    @media #{$phone} {       
     width:70%;
     height:40px;
     margin:15%;
@@ -21,7 +20,6 @@
 
 @mixin btn_medium {
     @media #{$medium} {
-
     width:70%;
     height:60px;
     margin:15%;
@@ -40,10 +38,9 @@
 
 @mixin btn_large {
     @media #{$large} {
-
     width:50%;
     height:100px;
-    margin:auto;
+    margin:2% 25% 2% 25%;
     border-radius: 80px;
     color: white;
     font-size: 2.5em;
@@ -61,11 +58,10 @@
 
 @mixin btn2 {
     @media #{$phone} {
-
     display:flex;
     width:70%;
     height: 35px;
-    margin: 10px 15% 30px 15%;
+    margin: 10px 15% 30px 15%;   
     text-align: center;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 15px;
@@ -89,7 +85,8 @@
                 .choix {
                     position: relative;
                     text-align: center;
-                    bottom: 6px;
+                    font-size: 0.7em;
+                    align-content: center;
                     left: 5%;
                 }
                         &:hover {
@@ -101,7 +98,6 @@
 
 @mixin btn2_medium {
     @media #{$medium} {
-
     display:flex;
     width: 70%;
     height: 55px;
@@ -124,15 +120,17 @@
         background-color: $primary;
     }
             .icon {
+                display: flex;
                 position: relative;
                 top: 15px;
                 left: 30px;
             }
                 .choix {
+                    display: flex;
                     position: relative;
-                    width: 75%;
-                    padding-left: 25%;
-                    padding-right: 0;
+                    width: 85%;
+                    align-content: center;
+                    justify-content: center;                   
                     bottom: 8px;
                 }
                         &:hover {
@@ -144,9 +142,6 @@
 
 @mixin btn2_large {
     @media #{$large} {
-
-       
-    
     display:flex;
     width: 50%;
     margin: 20px 25% 20px 25%;
@@ -156,11 +151,7 @@
     background-color: rgb(243, 240, 240);
     box-shadow:  5px 5px 18px #888888;
     font-size: 2em;
-    font-weight: bold;
-       
-                          
-     
-
+    font-weight: bold;                                      
     .puce {
         opacity:1;
         height: 40px;
@@ -174,18 +165,21 @@
         background-color: $primary;
     }
             .icon {
+                display: flex;
                 position: relative;
                 top: 25px;
             }
                 .choix {
+                    display: flex;
                     position: relative;
+                    align-content: center;
+                    justify-content: center;
                     left: 20%;
                     bottom: 6px;
                 }
                 &:hover {
                     background-color: lighten($primary, 32);
-                    color: $primary;  }
-                        
+                    color: $primary;  }                        
     }
 }
 
@@ -213,14 +207,14 @@
 }
 
 @mixin btn_image_large {
-    @media #{$large} {
-
-    
+    @media #{$large} {    
     width: 90%;
     height: 170px;
     border-radius: 25px 25px 0 0;
     }
 }
+
+/* Button Like */
 
 @mixin btn_like {
     @media #{$phone} {
@@ -235,36 +229,32 @@
             display: flex;
             font-size: 0.8em;
     
-            &__name {
-                position: relative;
-                left: 20px;
-                width: 80%;
-                margin-bottom: 5px;                
+                &__name {
+                    position: relative;
+                    left: 20px;
+                    width: 80%;
+                    margin-bottom: 5px;                
             }
-            .coeur {
-                height: 30px;
-                width: 30px;
-
+                    .coeur {
+                        height: 30px;
+                        width: 30px;
                 
-            .coeur_svg {
-                position:relative;
-                top: 15px;
-                height: 30px;
-                width: 30px;
-                fill: transparent;
-                stroke :black;
+                        .coeur_svg {
+                            position:relative;
+                            top: 15px;
+                            height: 30px;
+                            width: 30px;
+                            fill: transparent;
+                            stroke :black;
 
-                &:hover {
-                    animation-name: degrade_coeur;
-                    animation-duration: 1s;
-                    animation-fill-mode: forwards;
-                }
-                    
-                    
-                        
-                    }           
-                      
-    }     }
+                            &:hover {
+                                animation-name: degrade_coeur;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
+                            }                                        
+                        } 
+                    }                                
+    }     
 }  
   
 @mixin btn_like_medium {
@@ -280,30 +270,30 @@
             display: flex;
             font-size: 0.8em;
     
-            &__name {
-                position: relative;
-                left: 20px;
-                width: 80%;
-                margin-bottom: 5px;
-            }
+                &__name {
+                    position: relative;
+                    left: 20px;
+                    width: 80%;
+                    margin-bottom: 5px;
+                }
 
-                .coeur {                   
-                    height: 30px;
-                    width: 30px;
-            }
-                     .coeur_svg {
-                        position:relative;
-                        top: 15px;
+                    .coeur {                   
                         height: 30px;
                         width: 30px;
-                        fill: transparent;
-                        stroke :black;
-                             &:hover {
-                                animation-name: degrade_coeur;
-                                animation-duration: 1s;
-                                animation-fill-mode: forwards;
-                            }                  
-                    }      
+                    }
+                        .coeur_svg {
+                            position:relative;
+                            top: 15px;
+                            height: 30px;
+                            width: 30px;
+                            fill: transparent;
+                            stroke :black;
+                                &:hover {
+                                    animation-name: degrade_coeur;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }                  
+                        }      
     }     
 }  
 
@@ -319,33 +309,35 @@
             display: flex;
             font-size: 0.8em;
     
-            &__name {
-                position: relative;
-                left: 20px;
-                width: 80%;
-                margin-bottom: 5px;
-                font-size: 1em;               
-            }
-            .coeur {
-                height: 30px;
-                width: 30px;
+                &__name {
+                    position: relative;
+                    left: 20px;
+                    width: 80%;
+                    margin-bottom: 5px;
+                    font-size: 1em;               
+                }
+                    .coeur {
+                        height: 30px;
+                        width: 30px;
                 
-                .coeur_svg {
-                    position:relative;
-                    top: 15px;
-                    height: 30px;
-                    width: 30px;
-                    fill: transparent;
-                    stroke :black;
-                        &:hover {
-                            animation-name: degrade_coeur;
-                            animation-duration: 1s;
-                            animation-fill-mode: forwards;
-                        }
-                }                                                          
-            }      
+                        .coeur_svg {
+                            position:relative;
+                            top: 15px;
+                            height: 30px;
+                            width: 30px;
+                            fill: transparent;
+                            stroke :black;
+                                &:hover {
+                                    animation-name: degrade_coeur;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                         }                                                          
+                    }      
     }     
 }  
+
+/* Button Nouveau */
 
 @mixin btn_nouveau {
     @media #{$phone} {
@@ -384,7 +376,7 @@
 @mixin btn_nouveau_large {
     @media #{$large} {
         position:relative;
-    
+        z-index: +2;
         top: 45px;
         left: 55%;
         width: 25%;
@@ -397,6 +389,8 @@
         padding-top: 5px; 
     }
 }
+
+/* Display des cartes pour les moyen et grands écrans */
 
 @mixin carte_medium {
     @media #{$medium} {
@@ -418,48 +412,80 @@
     }
 }
 
+/* Button Home */
 
-@mixin btn_home {
+@mixin home {
     @media #{$phone} {
-        position: relative;
-        left : 10%;
-        top: 25px;  
-        font-size: bold;
-             &__img {
-                color: black;
-                font-weight: bold;
-                font-size: 2em;
+        display: flex;
+        width: 100%;
+        height: 40px;
+            &__btn {
+                width: 10%;
+                height: 100px;                          
+                    &__img { 
+                        position: relative;
+                        left: 10px;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
             }
+                        .home__title2 {
+                            width: 60%; 
+                            height: 40px;
+                            margin-left: 10%;
+                            margin-right: 20%;
+                                img {
+                                    height : 30px;
+                                    width: 100%;
+                                }
+                        }
     }
 }
 
-@mixin btn_home_medium {
+@mixin home_medium {
     @media #{$medium} {
-        position: relative;
-        left : 10%;
-        top: 25px;  
-        font-size: bold;
-             &__img {
-                color: black;
-                font-weight: bold;
-                font-size: 2em;
+        display: flex;
+        width: 100%;
+        height :10%;
+            &__btn {
+                width: 20%;
+                height: 10%;                          
+                    &__img {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 2em;
+                    }
             }
+        &__title2 {
+            width: 80%; 
+            height: 10%;
+        }
     }
 }
 
-@mixin btn_home_large {
+@mixin home_large {
     @media #{$large} {
-        position: relative;
-        left : 10%;
-        top: 25px;  
-        font-size: bold;
-             &__img {
-                color: black;
-                font-weight: bold;
-                font-size: 2em;
+        display: flex;
+        width: 100%;
+        height :10%;
+            &__btn {
+                width: 20%;
+                height: 10%;                          
+                    &__img {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 8em;
+                    }
             }
+        &__title2 {
+            width: 80%; 
+            height: 10%;
+        }
     }
 }
+
+/* Loader */
 
 @mixin loader {
     @media #{$phone} {
@@ -468,46 +494,45 @@
         background-color: blue;
         height: 100%;
         width :100%;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bold;
-        color: white;
-        
+        color: white;   
         animation-name: out;
         animation-duration:0.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
             .circle_box {
-                display: flex;               
-                position: relative;
-                top: 30%;
-                              
+                display: flex;
+                flex-flow: row wrap;               
+                position: absolute;
+                top: 30%;                                            
             }
                 .chargement {
-                    display: inline-block;
+                    display: flex;
                     position:relative;
                     left: 2%;
                     padding-top:4%;  
                 }
                     .circle {   
-                        width :32px;
-                        height: 32px;
-                        border-radius: 32px;
-                        border : 6px solid grey    
+                        width :12px;
+                        height: 12px;
+                        border-radius: 12px;
+                        border : 3px solid grey    
                     }
                         .circle:after{
                             content:"";
+                            display: flex;
                             position: absolute;
-                            height: 32px;
-                            width: 32px;
+                            height: 12px;
+                            width: 12px;
                             top: 0; left:0;
-                            border-radius: 32px;
-                            border: 6px solid transparent;
+                            border-radius: 12px;
+                            border: 3px solid transparent;
                             border-top-color: #FFF;
                             animation: spin 1s linear infinite;
                         }
 }
-
 
 @mixin loader_medium {
     @media #{$medium} {
@@ -558,49 +583,83 @@
 @mixin loader_large {
     @media #{$large} {
         position: fixed;
-    z-index: 10;
-    background-color: blue;
-    height: 100%;
-    width :100%;
-    font-size: 3em;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    animation-name: out;
-    animation-duration:0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.circle_box {
-    display: flex;
-    position: relative;
-    top: 50%;
-    left: 35%;
-}
-
-.chargement {
-    display: inline-block;
-    position:relative;
-    left: 2%;   
-}
-
-.circle {   
-    width :62px;
-    height: 62px;
-    border-radius: 50px;
-    border : 6px solid grey    
-}
-
-.circle:after{
-    content:"";
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 0; left:0;
-    border-radius: 50px;
-    border: 6px solid transparent;
-    border-top-color: #FFF;
-    animation: spin 1s linear infinite;
-}
+        z-index: 10;
+        background-color: blue;
+        height: 100%;
+        width :100%;
+        font-size: 3em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        animation-name: out;
+        animation-duration:0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
+            .circle_box {
+                display: flex;
+                position: relative;
+                top: 50%;
+                left: 35%;
+            }
+                    .chargement {
+                        display: inline-block;
+                        position:relative;
+                        left: 2%;   
+                    }
+                            .circle {   
+                                width :62px;
+                                height: 62px;
+                                border-radius: 50px;
+                                border : 6px solid grey    
+                            }
+                                    .circle:after{
+                                        content:"";
+                                        position: absolute;
+                                        height: 50px;
+                                        width: 50px;
+                                        top: 0; left:0;
+                                        border-radius: 50px;
+                                        border: 6px solid transparent;
+                                        border-top-color: #FFF;
+                                        animation: spin 1s linear infinite;
+                                    }
+}
+
+/* Bannières des différentes pages */
+
+@mixin bannière {
+    @media #{$phone} {
+        width: 100%;
+        height:200px;
+        z-index: +1;
+            &__img {
+                width: 100%;
+                height: 100%;
+            }
+    }
+}
+
+@mixin bannière_medium {
+    @media #{$medium} {
+        width: 100%;
+        height:300px;
+        z-index: +1;
+            &__img {
+                width: 100%;
+                height: 100%;
+            }
+    }
+}
+
+@mixin bannière_large {
+    @media #{$large} {
+        width: 100%;
+        height:500px;
+        z-index: +1;
+            &__img {
+                width: 100%;
+                height: 100%;
+            }
+    }
+}
