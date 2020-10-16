@@ -1,6 +1,5 @@
 .loader {
-    @include loader;
-    @include loader_medium;
+   
     @include loader_large;
   }
 
@@ -11,7 +10,7 @@
     overflow:hidden;
 }
 
-/* page principale */
+/******************************** PAGE PRINCIPALE ************************************/
 
 .title {
     width: 75%;
@@ -23,11 +22,16 @@
 }
 
 .locate {
+    border: none;
+    position: relative;
     display:flex;
     width: 100%;
-    text-align: center;    
-    background-color: rgb(226, 226, 226);
-        &__logo {
+    text-align: center; 
+    box-shadow: inset  0px 5px 10px  #888888;
+    background-color: rgb(226, 226, 226);}
+
+       .locate i {
+            position: absolute;
             width: 27%;           
             padding-top: 10px;
             padding-bottom: 10px;
@@ -39,8 +43,8 @@
 input {   
     border: none;
     height: 100%;
-    width: 46%;
-
+    width: 100%;
+    box-shadow: inset  0px 27px 22px -37px #181818;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
@@ -52,13 +56,15 @@ input {
          text-decoration: none;
      }       
 }
-}
+
 .reserve {
-    width :60%;
+    display: block;
+    width :70%;
     height: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 1.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 5%;
+    font-size: 1.1em;
 }
 .bloc {
     background-color: rgb(243, 240, 240);
@@ -69,8 +75,7 @@ input {
     justify-content: center;
     text-align: center;
     width :100%;
-    height: 10%;
-    
+    height: 10%;    
 }
 
 .bloc_page {
@@ -84,7 +89,7 @@ input {
     @include carte_large;
 }
 
-/*  les différentes pages */
+/******************************** PAGES DES MENUS ******************************************/
 
 .home {  
     @include home;  
@@ -99,31 +104,9 @@ input {
 }
 
 .onglet {
-    display: flex;    
-    width: 100%;
-    height: 80px;
-    .name_restaurant {
-        display: inline-block;
-        width: 80%;       
-    }
-        .like_title {           
-            position: relative;
-            top: 35px;            
-            width: 10%;
-            font-size: 1.4em;
-                .coeur_svg {
-                    position:relative;                
-                    height: 30px;
-                    width: 30px;
-                    fill: transparent;
-                    stroke :black;
-                        &:hover {
-                            animation-name: degrade_coeur;
-                            animation-duration: 1s;
-                            animation-fill-mode: forwards;
-                        }
-                }
-        }
+    @include onglet;
+    @include onglet_medium;
+    @include onglet_large;
 }
 
 .bloc1 {
@@ -135,7 +118,8 @@ input {
 }
 
 .entrée,.plat,.dessert {
-    padding-left: 10px;    
+    padding-left: 10px;
+    box-shadow:  5px 5px 8px #e2dede;        
 }
 
 .prix {
@@ -143,13 +127,14 @@ input {
     top: 30px;
     padding-right: 10px;
     font-size: 1em;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .entrée__name,.plat__name,.dessert__name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
 }
 
 

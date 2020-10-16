@@ -1,10 +1,11 @@
 /*Les différents boutons avec Médias queries intégrées*/
 
+/******************************** PAGE PRINCIPALE **************************************/
+
 .btn {  
     @include btn;
     @include btn_medium;  
-    @include btn_large;
-    
+    @include btn_large;   
 }
 
 .btn2 {
@@ -32,7 +33,7 @@
     @include btn_nouveau_large;
 }
     
-
+/***************************** PAGE DES MENUS ****************************************/ 
 
 .entrée,.plat,.dessert {
     cursor: pointer;
@@ -48,6 +49,7 @@
             width: 100%;
             height: 80px;
             margin-right: 10px;
+            margin-left: 10px;
         }   
             &.prix {
                 display:flex;

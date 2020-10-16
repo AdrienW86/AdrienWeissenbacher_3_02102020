@@ -1,16 +1,72 @@
+/************************ PAGE PRINCIPALE ********************************/
+
+/* Loader */
+
+
+
+@mixin loader_large {
+   
+        position: fixed;   
+        z-index: 10;
+        background-color: blue;
+        height: 100%;
+        width :100%;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        animation-name: out;
+        animation-duration:0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+    }
+            .circle_box {  
+                
+                top: 454px;
+                width: 10%; 
+                left: 20%;
+                position: fixed;
+            }
+                    .chargement {   
+                        
+                        top: 456px;
+                        width: 10%; 
+                        left: 40%;
+                        position: fixed;                                                                  
+                    }
+                            .circle {   
+                                width :62px;
+                                height: 62px;
+                                border-radius: 50px;
+                                border : 6px solid grey    
+                            }
+                                    .circle:after{
+                                        content:"";
+                                        position: absolute;
+                                        height: 50px;
+                                        width: 50px;
+                                        top: 0; left:0;
+                                        border-radius: 50px;
+                                        border: 6px solid transparent;
+                                        border-top-color: #FFF;
+                                        animation: spin 1s linear infinite;
+                                    }
+
 /* First button */
 
 @mixin btn {
     @media #{$phone} {       
-    width:70%;
-    height:40px;
-    margin:15%;
+    width:60%;
+    height:60px;
+    margin:0 20% 10% 20%;
     border-radius: 40px;
     color: white;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;  
-    padding: 10px 0px 10px 0px;
+    padding: 20px 10px 10px 10px;
+    box-shadow:  5px 5px 8px #a8a6a6;
     background: linear-gradient($second, $primary);
         &:hover {
             background: linear-gradient($second-light, $primary-light);
@@ -20,15 +76,16 @@
 
 @mixin btn_medium {
     @media #{$medium} {
-    width:70%;
-    height:60px;
-    margin:15%;
+    width:60%;
+    height:90px;
+    margin:0 20% 10% 20%;
     border-radius: 80px;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
-    padding: 10px 60px 10px 50px;
+    padding: 25px 60px 10px 50px;
     text-align: center;
+    box-shadow:  5px 5px 8px #a8a6a6;
     background: linear-gradient($second, $primary);
         &:hover {
             background: linear-gradient($second-light, $primary-light);
@@ -38,15 +95,16 @@
 
 @mixin btn_large {
     @media #{$large} {
-    width:50%;
-    height:100px;
-    margin:2% 25% 2% 25%;
-    border-radius: 80px;
+    width:60%;
+    height:110px;
+    margin:0% 20% 10% 20%;
+    border-radius: 110px;
     color: white;
     font-size: 2.5em;
     font-weight: bold;
     padding: 20px 60px 10px 50px;
     text-align: center;
+    box-shadow:  5px 5px 8px #a8a6a6;
     background: linear-gradient($second, $primary);
         &:hover {
             background: linear-gradient($second-light, $primary-light);
@@ -59,34 +117,39 @@
 @mixin btn2 {
     @media #{$phone} {
     display:flex;
-    width:70%;
-    height: 35px;
-    margin: 10px 15% 30px 15%;   
+    width:90%;
+    height: 75px;
+    margin: 10px 5% 30px 5%;   
     text-align: center;
     border: 0px solid rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: rgb(243, 240, 240);
-    box-shadow:  5px 5px 18px #888888;
+    box-shadow:  5px 5px 8px #e9e4e4;
     .puce {
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
+        padding-top: 3px;
         border-radius: 100%;
         position: relative;
         right: 10px;
-        top: 7px;
+        top: 22px;
+        font-size: 0.6;
         color: white;
         text-align: center;
         background-color: $primary;
     }
             .icon {
+                margin-left: 15px;
                 position: relative;
-                top: 10px;
+                top: 25px;
             }
                 .choix {
+                    display: block;
                     position: relative;
-                    text-align: center;
-                    font-size: 0.7em;
                     align-content: center;
+                    padding-top: 9px;
+                    font-size: 1em;
+                    justify-content: center;
                     left: 5%;
                 }
                         &:hover {
@@ -100,12 +163,12 @@
     @media #{$medium} {
     display:flex;
     width: 70%;
-    height: 55px;
+    height: 90px;
     margin: 10px 15% 30px 15%;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 25px;
     background-color: rgb(243, 240, 240);
-    box-shadow:  5px 5px 18px #888888;
+    box-shadow:  5px 5px 8px #e9e4e4;
     font-size: 1.5em;
     font-weight: bold;
     .puce {
@@ -114,7 +177,7 @@
         border-radius: 100%;
         position: relative;
         right: 10px;
-        top: 7px;
+        top: 27px;
         color: white;
         text-align: center;
         background-color: $primary;
@@ -122,7 +185,7 @@
             .icon {
                 display: flex;
                 position: relative;
-                top: 15px;
+                top: 25px;
                 left: 30px;
             }
                 .choix {
@@ -145,11 +208,11 @@
     display:flex;
     width: 50%;
     margin: 20px 25% 20px 25%;
-    height: 85px;
+    height: 110px;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 35px;
     background-color: rgb(243, 240, 240);
-    box-shadow:  5px 5px 18px #888888;
+    box-shadow:  5px 5px 8px #e9e4e4;
     font-size: 2em;
     font-weight: bold;                                      
     .puce {
@@ -158,8 +221,8 @@
         width: 40px;
         border-radius: 100%;
         position: relative;
-        right: 10px;
-        top: 17px;
+        right: 20px;
+        top: 37px;
         color: white;
         text-align: center;
         background-color: $primary;
@@ -167,9 +230,10 @@
             .icon {
                 display: flex;
                 position: relative;
-                top: 25px;
+                top: 40px;
             }
                 .choix {
+                    padding-top: 10px;
                     display: flex;
                     position: relative;
                     align-content: center;
@@ -223,6 +287,7 @@
             height: 65px;
             margin: 0 5% 0 5%;
             border-radius: 0px 0px 15px 15px;
+            box-shadow:  5px 5px 8px #e9e4e4;
             background-color: rgb(255, 255, 255);
             position: relative;
             bottom: 15px;
@@ -264,6 +329,7 @@
             height: 60px;
             margin: 0%;
             border-radius: 0px 0px 15px 15px;
+            box-shadow:  5px 5px 8px #e9e4e4;
             background-color: rgb(255, 255, 255);
             position: relative;
             bottom: 20px;
@@ -303,6 +369,7 @@
             width: 90%;
             height: 60px;
             border-radius: 0px 0px 25px 25px;
+            box-shadow:  5px 5px 8px #e9e4e4;
             background-color: rgb(255, 255, 255);
             position: relative;
             bottom: 20px;
@@ -411,6 +478,7 @@
         margin-right: 5%;
     }
 }
+/***************************** PAGE DES MENUS ***************************************/
 
 /* Button Home */
 
@@ -419,6 +487,9 @@
         display: flex;
         width: 100%;
         height: 40px;
+        padding-top: 1%;
+        margin-bottom: 2%;
+       
             &__btn {
                 width: 10%;
                 height: 100px;                          
@@ -427,7 +498,7 @@
                         left: 10px;
                         color: black;
                         font-weight: bold;
-                        font-size: 1.5rem;
+                        font-size: 1.5em;
                     }
             }
                         .home__title2 {
@@ -447,183 +518,61 @@
     @media #{$medium} {
         display: flex;
         width: 100%;
-        height :10%;
+        height: 80px;
+        padding-top: 1%;
+        padding-bottom: 1%;
             &__btn {
-                width: 20%;
-                height: 10%;                          
-                    &__img {
+                width: 10%;
+                height: 100px;                          
+                    &__img { 
+                        position: relative;
+                        left: 10px;
                         color: black;
                         font-weight: bold;
-                        font-size: 2em;
+                        font-size: 3em;
                     }
             }
-        &__title2 {
-            width: 80%; 
-            height: 10%;
-        }
+                        .home__title2 {
+                            width: 60%; 
+                            height: 40px;
+                            margin-left: 10%;
+                            margin-right: 20%;
+                                img {
+                                    height : 60px;
+                                    width: 100%;
+                                }
+                        }
     }
 }
-
 @mixin home_large {
     @media #{$large} {
         display: flex;
         width: 100%;
-        height :10%;
+        height: 120px;
+        padding-top: 1%;
+        padding-bottom: 1%;       
             &__btn {
-                width: 20%;
-                height: 10%;                          
-                    &__img {
+                width: 10%;
+                height: 100px;                          
+                    &__img { 
+                        position: relative;
+                        left: 10px;
                         color: black;
                         font-weight: bold;
-                        font-size: 8em;
+                        font-size: 4em;
                     }
             }
-        &__title2 {
-            width: 80%; 
-            height: 10%;
-        }
-    }
-}
-
-/* Loader */
-
-@mixin loader {
-    @media #{$phone} {
-        position: fixed;
-        z-index: 10;
-        background-color: blue;
-        height: 100%;
-        width :100%;
-        font-size: 1em;
-        font-weight: bold;
-        color: white;   
-        animation-name: out;
-        animation-duration:0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-            .circle_box {
-                display: flex;
-                flex-flow: row wrap;               
-                position: absolute;
-                top: 30%;                                            
-            }
-                .chargement {
-                    display: flex;
-                    position:relative;
-                    left: 2%;
-                    padding-top:4%;  
-                }
-                    .circle {   
-                        width :12px;
-                        height: 12px;
-                        border-radius: 12px;
-                        border : 3px solid grey    
-                    }
-                        .circle:after{
-                            content:"";
-                            display: flex;
-                            position: absolute;
-                            height: 12px;
-                            width: 12px;
-                            top: 0; left:0;
-                            border-radius: 12px;
-                            border: 3px solid transparent;
-                            border-top-color: #FFF;
-                            animation: spin 1s linear infinite;
+                        .home__title2 {
+                            width: 60%; 
+                            height: 40px;
+                            margin-left: 10%;
+                            margin-right: 20%;
+                                img {
+                                    height : 80px;
+                                    width: 100%;
+                                }
                         }
-}
-
-@mixin loader_medium {
-    @media #{$medium} {
-        position: fixed;
-        z-index: 10;
-        background-color: blue;
-        height: 100%;
-        width :100%;
-        font-size: 2em;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        animation-name: out;
-        animation-duration:0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
     }
-            .circle_box {
-                display: flex;
-                position: relative;
-                top: 20%;
-                left: 15%;
-            }
-                .chargement {
-                    display: inline-block;
-                    position:relative;
-                    left: 2%;   
-                }
-                    .circle {   
-                        width :62px;
-                        height: 62px;
-                        border-radius: 50px;
-                        border : 6px solid grey    
-                    }
-                        .circle:after{
-                            content:"";
-                            position: absolute;
-                            height: 50px;
-                            width: 50px;
-                            top: 0; left:0;
-                            border-radius: 50px;
-                            border: 6px solid transparent;
-                            border-top-color: #FFF;
-                            animation: spin 1s linear infinite;
-                        }
-}
-
-@mixin loader_large {
-    @media #{$large} {
-        position: fixed;
-        z-index: 10;
-        background-color: blue;
-        height: 100%;
-        width :100%;
-        font-size: 3em;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        animation-name: out;
-        animation-duration:0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-            .circle_box {
-                display: flex;
-                position: relative;
-                top: 50%;
-                left: 35%;
-            }
-                    .chargement {
-                        display: inline-block;
-                        position:relative;
-                        left: 2%;   
-                    }
-                            .circle {   
-                                width :62px;
-                                height: 62px;
-                                border-radius: 50px;
-                                border : 6px solid grey    
-                            }
-                                    .circle:after{
-                                        content:"";
-                                        position: absolute;
-                                        height: 50px;
-                                        width: 50px;
-                                        top: 0; left:0;
-                                        border-radius: 50px;
-                                        border: 6px solid transparent;
-                                        border-top-color: #FFF;
-                                        animation: spin 1s linear infinite;
-                                    }
 }
 
 /* Bannières des différentes pages */
@@ -662,4 +611,99 @@
                 height: 100%;
             }
     }
+}
+
+@mixin onglet {
+    @media #{$phone} {
+        display: flex;    
+        width: 100%;
+        height: 80px;
+            .name_restaurant {
+                display: inline-block;
+                width: 80%;                    
+            }
+                .like_title {           
+                    position: relative;
+                    top: 28%;
+                    right: 2%;            
+                    width: 10%;                    
+                        .coeur_svg {
+                            position:relative;  
+                            left: 80%;             
+                            height: 30px;
+                            width: 30px;
+                            fill: transparent;
+                            stroke :black;
+                                &:hover {
+                                    animation-name: degrade_coeur;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                        }
+                }
+    }   
+}
+
+@mixin onglet_medium {
+    @media #{$medium} {
+        display: flex;    
+        width: 100%;       
+        height: 80px;
+            .name_restaurant {
+                display: inline-block;
+                width: 85%; 
+                font-size: 2em; 
+                padding: 0 4% 10% 4%;
+            }
+                .like_title {           
+                    position: relative;
+                    top: 84%;
+                    left: 7%;           
+                    width: 10%;                                       
+                        .coeur_svg {
+                            position:relative;                                         
+                            height:100%;
+                            width: 100%;
+                            fill: transparent;
+                            stroke :black;
+                                &:hover {
+                                    animation-name: degrade_coeur;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                        }
+                }
+    }   
+}
+
+@mixin onglet_large {
+    @media #{$large} {
+        display: flex;    
+        width: 100%;
+        height: 80px;
+            .name_restaurant {
+                display: inline-block;
+                width: 80%; 
+                font-size: 2.5em;
+            }
+                .like_title {           
+                    position: relative;
+                    top: 95%;
+                    left: 4%;            
+                    width: 10%;
+                        .coeur_svg {
+                            position:relative;  
+                            left: 80%;              
+                            height: 30px;
+                            width: 30px;
+                            fill: transparent;
+                            stroke :black;
+                                &:hover {
+                                    animation-name: degrade_coeur;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                        }
+                }
+    }   
 }
