@@ -248,7 +248,7 @@ a {
     position: relative;
     right: 10px;
     top: 22px;
-    font-size: 0.6;
+    font-size: 0.8em;
     color: white;
     text-align: center;
     background-color: #9356DC;
@@ -511,7 +511,7 @@ a {
     height: 30px;
     background-color: #a0cfa0;
     font-size: 0.8em;
-    font-size: bold;
+    font-weight: bold;
     color: #0c8a0c;
     text-align: center;
     padding-top: 7px;
@@ -527,7 +527,7 @@ a {
     height: 30px;
     background-color: #a0cfa0;
     font-size: 0.8em;
-    font-size: bold;
+    font-weight: bold;
     color: #0c8a0c;
     text-align: center;
     padding-top: 7px;
@@ -543,7 +543,7 @@ a {
     height: 30px;
     background-color: #a0cfa0;
     font-size: 1em;
-    font-size: bold;
+    font-weight: bold;
     color: #0c8a0c;
     text-align: center;
     padding-top: 5px;
@@ -580,8 +580,8 @@ a {
   position: relative;
   transition: transform 0.7s;
   transition-property: width;
-  transition-delay: 0.5;
-  transition-duration: 1;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
   border-radius: 0 10px 10px 0;
   width: 0px;
@@ -605,8 +605,8 @@ a {
   height: 80px;
   transform: width;
   transition-property: width;
-  transition-delay: 0.5;
-  transition-duration: 1;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
 .entrée:hover .checkbox__img, .plat:hover .checkbox__img, .dessert:hover .checkbox__img {
