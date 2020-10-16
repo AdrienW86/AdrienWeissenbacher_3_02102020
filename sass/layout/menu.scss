@@ -3,12 +3,27 @@
   }
 
 .container {
+    @media #{$phone} {
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow:hidden;
 }
-
+@media #{$medium} {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    overflow:hidden;
+}
+@media #{$large} {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    overflow:hidden;
+}
+}
 /******************************** PAGE PRINCIPALE ************************************/
 
 .title {

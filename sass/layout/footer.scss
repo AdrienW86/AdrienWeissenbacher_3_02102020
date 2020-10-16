@@ -1,19 +1,6 @@
 footer {
-    color: white;
-    background-color: black;
-    font-size: 1.4em;
-    font-weight: bold;
-    height: 10%;
-    width: 100%;
-    margin: 0px;
-    padding: 10px;
-        
-    a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-            color: $primary;
-        }
-    }      
+    @include footer;
+    @include footer_medium;
+    @include footer_large;
 }
 
