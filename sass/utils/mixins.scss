@@ -4,7 +4,7 @@
 
 
 
-@mixin loader_large {
+@mixin loader {
    
         position: fixed;   
         z-index: 10;
@@ -16,11 +16,15 @@
         color: white;
         text-align: center;
         animation-name: out;
-        animation-duration:0.5s;
+        animation-duration: 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         
     }
+
+    .loader__box {
+        width: 30%;
+    
             .circle_box {  
                 
                 top: 454px;
@@ -51,7 +55,7 @@
                                         border: 6px solid transparent;
                                         border-top-color: #FFF;
                                         animation: spin 1s linear infinite;
-                                    }
+                                    }}
 
 /* First button */
 
@@ -65,7 +69,7 @@
     font-size: 1em;
     font-weight: normal;
     text-align: center;  
-    padding: 20px 10px 10px 10px;
+    padding-top: 4%;
     box-shadow:  5px 5px 8px #a8a6a6;
     background: linear-gradient($second, $primary);
         &:hover {
@@ -139,7 +143,7 @@
         background-color: $primary;
     }
             .icon {
-                margin-left: 15px;
+                margin-left: 5px;
                 position: relative;
                 top: 25px;
             }
