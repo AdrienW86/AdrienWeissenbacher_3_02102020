@@ -732,11 +732,12 @@ border-radius: 25px 25px 0 0;
         }
             .like_title {           
                 position: relative;
-                top: 94%;
+                top: 90%;
                 left: 4%;            
                 width: 10%;
                     .coeur_svg {
-                        position:relative;  
+                        position:relative;
+                        bottom: 2%;  
                         left: 70%;                               
                         height: 30px;
                         width: 30px;
