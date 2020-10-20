@@ -702,9 +702,10 @@ border-radius: 25px 25px 0 0;
                 left: 7%;           
                 width: 10%;                                       
                     .coeur_svg {
-                        position:relative;                                         
-                        height:100%;
-                        width: 100%;
+                        position:relative; 
+                        right: 60%;                                      
+                        height:30px;
+                        width: 30px;
                         fill: transparent;
                         stroke :black;
                             &:hover {
@@ -731,12 +732,13 @@ border-radius: 25px 25px 0 0;
         }
             .like_title {           
                 position: relative;
-                top: 95%;
+                top: 94%;
                 left: 4%;            
                 width: 10%;
                     .coeur_svg {
                         position:relative;  
-                        left: 80%;              
+                        left: 70%; 
+                        bottom: 80px;            
                         height: 30px;
                         width: 30px;
                         fill: transparent;

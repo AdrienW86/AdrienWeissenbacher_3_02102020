@@ -137,6 +137,7 @@
 }
 
 h1 {
+  font-family: "Shrikhand", cursive;
   font-size: 1.5em;
   font-weight: bold;
   margin-left: 20px;
@@ -1004,8 +1005,9 @@ input:active {
   }
   .onglet .like_title .coeur_svg {
     position: relative;
-    height: 100%;
-    width: 100%;
+    right: 60%;
+    height: 30px;
+    width: 30px;
     fill: transparent;
     stroke: black;
   }
@@ -1030,13 +1032,14 @@ input:active {
   }
   .onglet .like_title {
     position: relative;
-    top: 95%;
+    top: 94%;
     left: 4%;
     width: 10%;
   }
   .onglet .like_title .coeur_svg {
     position: relative;
-    left: 80%;
+    left: 70%;
+    bottom: 80px;
     height: 30px;
     width: 30px;
     fill: transparent;
